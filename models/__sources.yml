@@ -1,0 +1,9 @@
+sources:
+  - name: sales
+    schema: sales
+    tables:
+      - name: categories
+      - name: companies
+      - name: customers
+      - name: countries
+      - name: orders
