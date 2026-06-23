@@ -4,7 +4,9 @@ models:
       tags: ['staging','orders']
     columns:
     - name: order_id
-
+    
   - name: stg_countries
     config:
       tags: ['staging',countries']
+
+

@@ -1,0 +1,4 @@
+name: gestion_pakcages
+version: 2
+macro-paths: ["macros"]
+

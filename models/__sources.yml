@@ -7,3 +7,10 @@ sources:
       - name: customers
       - name: countries
       - name: orders
+        columns:
+          - name: order_status
+            data_tests:
+              - accepted_values:
+                  arguments: 
+                    values: ['COMPLETED', 'CANCELLED', 'PROCESSING', 'WAITING_PAYMENT', 'SHIPPED']
+                    name: 'test_order_status_values'
