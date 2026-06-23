@@ -1,0 +1,10 @@
+models:
+  - name: int__orders
+    description: Intermediate model for order data
+    columns:
+      - name: customer_name
+        description: Name of the customer
+      - name: country_name
+        description: Country of the customer
+      - name: order_id
+        description: Unique identifier of the order

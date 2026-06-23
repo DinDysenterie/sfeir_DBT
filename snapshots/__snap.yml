@@ -1,0 +1,19 @@
+
+snapshots:
+  - name: "snapshot_1_Stg_Orders"
+    description: "Check snapshot of stg__orders"
+    relation: ref('stg__orders')
+    config:
+      schema: snapshots
+      strategy: check
+      check_cols: all
+      unique_key: order_id
+  
+  - name: "snapshot_2"
+    description: "Timestamp snapshot of stg__orders"
+    relation: ref('stg__orders')
+    config:
+      schema: snapshots
+      strategy: timestamp
+      updated_at: order_datetime
+      unique_key: order_id
