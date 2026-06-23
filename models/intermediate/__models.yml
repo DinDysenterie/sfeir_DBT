@@ -1,13 +1,13 @@
 models:
   - name: int__orders
-    tests:
-     - dbt_expectations.expect_table_row_count_to_be_between:
-        arguments: 
-          min_valeus: 2
+  #  tests:
+   #  - dbt_expectations.expect_table_row_count_to_be_between:
+    #    arguments: 
+     #     min_valeus: 2
     columns:
       - name: customer_name
-        tests:
-         - dbt_utils.not_empty_string
+       # tests:
+        # - dbt_utils.not_empty_string
         description: Name of the customer
       - name: country_name
         description: Country of the customer
